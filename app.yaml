@@ -18,14 +18,17 @@ handlers:
 
 - url: /wf-local/styles/
   static_dir: gae/styles/
+  secure: always
 
 - url: /wf-local/images/
   static_dir: gae/images/
+  secure: always
 
 - url: /web/(.*\.(png|gif|jpg|svg|xml|mp4|webm|pdf|mp3|mov))
   static_files: src/content/en/\1
   expiration: 1d
   upload: src/content/en/(.*\.(png|gif|jpg|svg|xml|mp4|webm|pdf|mp3|mov))
+  secure: always
 
 - url: /(.*\.ico)
   static_files: src/content/en/images/\1
@@ -41,6 +44,7 @@ handlers:
   static_files: src/content/en/\1
   expiration: 1d
   upload: src/content/en/(.*\.(js|css))
+  secure: always
   http_headers:
     Access-Control-Allow-Origin: https://developers.google.com
   application_readable: true
