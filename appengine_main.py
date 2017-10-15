@@ -99,10 +99,12 @@ class DevSitePages(webapp2.RequestHandler):
                 logging.info('301 ' + redirectTo)
                 self.redirect(redirectTo, permanent=True)
                 return
+            
               response = devsiteIndex.getPage(path, lang)
               if (response is None) and (path.startswith('showcase') or 
                   path.startswith('shows') or path.startswith('updates')):
                 response = devsiteIndex.getDirIndex(path)
+                
             else:
               response = devsitePage.getPage(path, lang)
 
@@ -118,10 +120,12 @@ class DevSitePages(webapp2.RequestHandler):
               response = render('gae/404.tpl', {'requestPath': fullPath})
               logging.error('404 ' + fullPath)
               self.response.set_status(404)
+            
             else:
               logging.info('200 ' + fullPath)
               if USE_MEMCACHE:
                 memcache.set(memcacheKey, response)
+                
           except Exception as ex:
             context = {'content': ex, 'requestPath': fullPath}
             response = render('gae/500.tpl', context)
