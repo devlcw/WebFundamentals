@@ -20,8 +20,7 @@ Welcome to the new Web**Fundamentals**! An effort to showcase best practices and
 * The latest is staged at https://web-central.appspot.com/web/
 
 ## Cloning the repo
-If you have a high-bandwidth connection, I recommend starting with a fresh clone
-of the repo.
+If you have a high-bandwidth connection, I recommend starting with a fresh clone of the repo.
 
 ```
 git clone https://github.com/google/WebFundamentals.git
