@@ -140,10 +140,10 @@
             <article class="devsite-article-inner">
               <div class="devsite-rating-container">
                 <div class="devsite-rating-stars">
-                  <a href="{{gitHubIssueUrl}}" class="material-icons wf-edit-button" title="Report Issue" target="_blank">
+                  <a href="{{ gitHubIssueUrl }}" class="material-icons wf-edit-button" title="Report Issue" target="_blank">
                     bug_report
                   </a>
-                  <a href="{{gitHubEditUrl}}" class="material-icons wf-edit-button" title="Fix It" target="_blank">
+                  <a href="{{ gitHubEditUrl }}" class="material-icons wf-edit-button" title="Fix It" target="_blank">
                     mode_edit
                   </a>
                 </div>
@@ -216,7 +216,7 @@
                 <option value="pt-br">Português (Brasil)</option>
                 <option value="ru">Pусский</option>
                 <option value="tr">Türkçe</option>
-                <option value="zh-cn">中文 (简体)</option>
+                <option value="zh-cn">中文 (简体）</option>
                 <option value="zh-tw">中文（繁體）</option>
               </select>
             </form>
