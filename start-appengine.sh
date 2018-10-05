@@ -6,7 +6,7 @@ set -e
 
 port=$1
 if [ "$port" == "" ]; then
-  port='8083'
+  port='8080'
 fi
 
 echo "Starting server on: http://localhost:"$port"/"
