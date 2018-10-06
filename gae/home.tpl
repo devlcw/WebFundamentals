@@ -11,7 +11,7 @@
     {% autoescape off %}{{ customcss }}{% endautoescape %}
     <style>
       .wf-stage-warning {
-        color: #4285f4 !important;
+        color: #4385f5 !important;
         font-weight: bold !important;
       }
       .wf-stage-warning .material-icons { vertical-align: middle; }
